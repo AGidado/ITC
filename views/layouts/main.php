@@ -37,9 +37,6 @@ AppAsset::register($this);
         <a href="about" class="nav-link">About</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="contact" class="nav-link">Contact</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
         <a href="login" class="nav-link">Login</a>
       </li>
     </ul>
@@ -66,7 +63,7 @@ AppAsset::register($this);
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="expenses" class="nav-link">
+                <a href="index" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Expenses</p>
                 </a>

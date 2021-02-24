@@ -50,10 +50,9 @@ $config = [
             'rules' => [
                  '/home' => '/expenses/index',
                  '/about' => '/site/about',
-                 '/contact' => '/site/contact',
                  '/login' => '/site/login',
-                 'create' => '/expenses/create',
-                 'expenses' => '/expenses/index',
+                 '/create' => '/expenses/create',
+                 '/index' => '/expenses/index',
             ],
         ],
     ],
