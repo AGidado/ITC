@@ -48,9 +48,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                 '/home' => '/expenses/index',
-                 '/about' => '/site/about',
-                 '/login' => '/site/login',
+                 '/index' => '/expenses/index',
                  '/create' => '/expenses/create',
                  '/index' => '/expenses/index',
             ],

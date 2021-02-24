@@ -31,13 +31,7 @@ AppAsset::register($this);
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="home" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="about" class="nav-link">About</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="login" class="nav-link">Login</a>
+        <a href="index" class="nav-link">Home</a>
       </li>
     </ul>
   </nav>
