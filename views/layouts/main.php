@@ -39,11 +39,6 @@ AppAsset::register($this);
 
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="" class="brand-link">
-        <?php echo Html::img('@web/img/avatar.PNG', ['width' => '40', 'height' => '40']) ?>
-    </a>
-
     <div class="sidebar">
       <!-- Sidebar Menu -->
       <nav class="mt-2">
