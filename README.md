@@ -10,14 +10,23 @@ RUNNING THE APPLICATION
 ------------------------
 
 ### CLONE THE REPOSITORY 
-1. On GitHub, navigate to the main page of the repository (https://github.com/AGidado/ITC)
-2. Above the list of files, click Code.
-3. To clone the repository using HTTPS, under "Clone with HTTPS", click Copy sign. To clone the repository using an SSH   key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click Copy sign. To clone a repository using GitHub CLI, click Use GitHub CLI, then click copy sign.
-4. Open Git Bash or Terminal of your text editor.
-5. Change the current working directory to the location where you want the cloned directory.
-6. Type git clone, and then paste the URL you copied earlier and press enter key.
+1. https://github.com/AGidado/ITC
+2. Open Terminal.
+3. Change the current working directory to the location where you want the clone the project.
+4. Copy and pest the following:
 ~~~
-$ git clone https://github.com/AGidado/ITC.git
+git clone https://github.com/AGidado/ITC.git
+~~~
+
+### Install via Composer
+
+If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
+at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
+
+You can then install project dependencies by running the following command:
+
+~~~
+composer install
 ~~~
 
 ### DATABASE
@@ -27,9 +36,9 @@ Edit the file `config/db.php` with real data, for example:
 ```php
 $db = [
         'class' => 'yii\db\Connection',
-        'dsn' => 'pgsql:host=localhost;port=5432;dbname=yii2basic',
-        'username' => 'postgres',
-        'password' => '',
+        'dsn' => 'pgsql:host=localhost;port=5432;dbname=DatabaseName',
+        'username' => 'DatabaseUsername',
+        'password' => 'DatabasePassword',
         'charset' => 'utf8',
 ];
 ``` 
@@ -43,74 +52,26 @@ $db = [
         'class' => 'yii\db\Connection',
         'dsn' => 'pgsql:host=localhost;port=5432;dbname=expenses',
         'username' => 'postgres',
-        'password' => '',
+        'password' => 'postgres',
         'charset' => 'utf8',
 ];
 ``` 
-
-You can then access the application through the following URL:
-
+### Migration
+After connecting to database, run the following command to create table schemas:
 ~~~
-http://localhost/directory/web/
-~~~
-
-INSTALLATION
-------------
-
-### Install via Composer
-
-If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
-at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
-
-You can then install this project template using the following command:
-
-~~~
-composer create-project --prefer-dist yiisoft/yii2-app-basic itc
+php yii migrate
 ~~~
 
-Now you should be able to access the application through the following URL, assuming `itc` is the directory
-directly under the Web root.
+You can then start the application using the following command:
 
 ~~~
-http://localhost/itc/web/
+php yii serve
 ~~~
-
-### INSTALL FROM ARCHIVE FILE 
-
-Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
-a directory named `itc` that is directly under the Web root.
-
-Set cookie validation key in `config/web.php` file to some random secret string:
-
-```php
-'request' => [
-    // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-    'cookieValidationKey' => '<secret random string goes here>',
-],
-```
-
-You can then access the application through the following URL:
+Open your browser and the type the following addres :
 
 ~~~
-http://localhost/itc/web/
+localhost:8080
 ~~~
-
-CONFIGURATION
--------------
-
-### DATABASE
-
-Edit the file `config/db.php` with real data, for example:
-
-```php
-return [
-    'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=expenses',
-    'username' => 'root',
-    'password' => '1234',
-    'charset' => 'utf8',
-];
-```
 
 TESTING
 -------
