@@ -12,7 +12,7 @@ RUNNING THE APPLICATION
 ### CLONE THE REPOSITORY 
 1. https://github.com/AGidado/ITC
 2. Open Terminal.
-3. Change the current working directory to the location where you want the clone the project.
+3. Change the current working directory to the location where you want to clone the project.
 4. Copy and pest the following:
 ~~~
 git clone https://github.com/AGidado/ITC.git
