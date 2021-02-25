@@ -14,7 +14,8 @@ use yii\jui\DatePicker;
     <?php $form = ActiveForm::begin(); ?>
 
 
-    <?= $form->field($model, 'expense_date')->textInput() ?>
+  
+    <?= $form->field($model,'expense_date')->widget(DatePicker::className(),['clientOptions' => ['defaultDate' => '2014-01-01']]) ?>
     <?= $form->field($model, 'expense_value')->textInput() ?>
 
     <?= $form->field($model, 'expense_reason')->textarea(['rows' => 6]) ?>
