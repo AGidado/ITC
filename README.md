@@ -1,6 +1,6 @@
 ### SAVEMYEXPENSES
 
-SavaMyExpenses is a web app use for saving and keeping track of expenses by a user.
+SaveMyExpenses is a web app use for saving and keeping track of expenses by a user.
 
 REQUIREMENTS
 ------------
